@@ -6,13 +6,21 @@ Le projet consiste a développer une version bêta d’un système pour suivre l
 - ouvrir un terminal de commande (ex:powershell).
 - A l’aide de la commande pwd trouver votre emplacement sur l’ordinateur.
 - A l’aide de la commande cd placez vous dans le répertoire qui contient le projet.
-- Taper la commande python -m venv nom (nom= choisissez un nom a donner à votre environnement. 
+- Taper la commande python -m venv nom (nom= choisissez un nom a donner à votre environnement). 
 - Taper la commande .python\nom\Scripts\Activate.ps1 pour activer votre environnement virtuel.
 
 ### 2-Exécution du code de l’application :
-- Le fichier requirements.txt nous indique les packages nécéssaire a voir avant l’exécution du code.
+- Pre-requis: python 3.9.5
+- Quickstart:
+    - Pour exécuter le programme:
+    - git clone https://github.com/MAM95190/projet_2.git
+    - cd projet_2
+    - source env/bin/activate ou .python\env\Scripts\Activate.ps1 sous windows
+    - python3 -m pip install -r requirements.txt
+    - python3 main.py
+    
+- Le fichier requirements.txt nous indique les packages nécéssaire a avoir avant l’exécution du code.
 - Le programme se décompose en 6 modules :
-
 - main.py :c’est le module principale sans lequel le programme ne fonctionne pas ,le main regroupe toute les commande nécéssaire a la bonne éxécution du programme.
 - category_module.py:consiste a récuperer la liste de  en parsant le site https://books.toscrape.com/ grace a méthode get et requests et html parser.
 - one_category_module.py:ce module récupere la liste des des urls de toutes les categories et exploite chaqu’une d’elle pour récupérer la liste de tous les urls de tous  livres et en prenant en compte la pagination.
